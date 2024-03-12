@@ -73,20 +73,7 @@
 		crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
 		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-	<script>
-		$(document).ready(function () {
-			$("#joke").on("click", function () {
-				$.get("https://official-joke-api.appspot.com/random_joke", function (joke) {
-					$("#webcontent").append("<p>" + joke.setup + " - " + joke.punchline + "</p>");
-				});
-			});
-			$("#catfact").on("click", function () {
-				$.get("https://catfact.ninja/fact", function (catfact) {
-					$("#webcontent").append("<p>" + catfact.fact + "</p>");
-				});
-			});
-		});
-	</script>
+	<script src="scripts.js"></script>
 </body>
 
 </html>
